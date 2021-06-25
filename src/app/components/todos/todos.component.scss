@@ -36,9 +36,12 @@
 }
 
 .projects {
+  display: flex;
+  max-width: 400px;
 
   ul {
     display: flex;
+    flex-wrap: wrap;
 
     li {
       margin-right: 15px;
@@ -48,6 +51,10 @@
 
 .project-button {
   padding: 5% 10%;
+}
+
+#new-project-button {
+  padding: 10px 15px;
 }
 
 .todo.done .content {

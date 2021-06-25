@@ -51,6 +51,16 @@ export class TodosComponent implements OnInit {
     this.title = this.projects[this.currentProject].title;
   }
 
+  addNewProject() {
+    const lastProject = this.projects.length;
+    const project = {
+      title: `Project${lastProject + 1}`,
+      id: lastProject + 1,
+      todos: []
+    };
+    this.projects.push(project);
+  }
+
   saveChanges(){
     localStorage.setItem('projects', JSON.stringify(this.projects));
   }
