@@ -1,0 +1,55 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    border: 2px solid black;
+    padding: 2% 5%;
+
+    .content {
+      margin: 0 20px;
+    }
+  }
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+
+    button {
+      margin-left: 20px;
+    }
+  }
+}
+
+#save {
+  margin-top: 40px;
+}
+
+.projects {
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 15px;
+    }
+  }
+}
+
+.project-button {
+  padding: 5% 10%;
+}
+
+.todo.done .content {
+  text-decoration: line-through;
+}
